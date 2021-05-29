@@ -1,0 +1,141 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage1.master.cs" Inherits="MasterPage1" %>
+
+<!DOCTYPE html>
+
+<title></title>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server"><asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 551px;
+            border-style: solid;
+            border-width: 1px;
+        }
+        .auto-style2 {
+        }
+        .auto-style3 {
+            width: 393px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server" >
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <table class="auto-style1" >
+                <tr>
+                    <td colspan="3">
+                        <asp:Menu ID="Menu1" runat="server" BackColor="#FF9999" BorderColor="#3333CC" ForeColor="#3333FF" Orientation="Horizontal" Width="100%" OnMenuItemClick="Menu1_MenuItemClick">
+                            <DynamicMenuStyle Width="100%" />
+                            <Items>
+                                <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Information.aspx" Text="Information" Value="Information"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Department.aspx" Text="Department" Value="Department"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/About_us.aspx" Text="About_us" Value="About_us"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/contact_us.aspx" Text="contact_us" Value="contact_us"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Registration.aspx" Text="Registration" Value="Registration"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Login.aspx" Text="Login" Value="Login"></asp:MenuItem>
+                            </Items>
+                            <StaticMenuItemStyle HorizontalPadding="70px" VerticalPadding="15px" />
+                        </asp:Menu>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style3" style="background-color: #000066">
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                    </td>
+                    <td class="auto-style2">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server" >
+                            <p>
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder6" runat="server">
+                                </asp:ContentPlaceHolder>
+                            <p>
+                                <br />
+                            </p>
+                            <p>
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </p>
+                            <p>
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder5" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </p>
+                            <p>
+                                &nbsp;
+                        </asp:ContentPlaceHolder>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                            <p>
+                                <br />
+                            </p>
+                            <p>
+                            </p>
+                            <p>
+                            </p>
+                            <p>
+                            </p>
+                            <p>
+                            </p>
+                            <p>
+                            </p>
+                            <p>
+                            </p>
+                            <p>
+                            </p>
+                        </asp:ContentPlaceHolder>
+                        <br />
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder7" runat="server">
+                        </asp:ContentPlaceHolder>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="auto-style2" colspan="3" style="background-color: #808080">&nbsp;</td>
+
+                </tr>
+            </table>
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
